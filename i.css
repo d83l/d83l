@@ -1,0 +1,94 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilos para el encabezado */
+#header {
+    background: url('header.jpg') no-repeat center center;
+    background-size: cover;
+    height: 200px;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+/* Estilos para los encabezados */
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilos para los párrafos y listas */
+p, ul {
+    margin: 0 20px;
+    padding: 10px;
+    color: #555;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Estilos para el menú de navegación */
+ul.nav {
+    list-style-type: none;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+    margin: 0;
+}
+
+ul.nav li {
+    float: left;
+    position: relative;
+}
+
+ul.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 22px; /* Ajuste para centrar mejor el texto */
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Transición suave para hover */
+}
+
+ul.nav li a:hover {
+    background-color: #555;
+}
+
+ul.nav ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    z-index: 1; /* Asegura que el menú desplegable esté por encima del contenido */
+}
+
+ul.nav ul li {
+    float: none;
+    border-bottom: 1px solid #888;
+}
+
+ul.nav ul li:last-child {
+    border-bottom: none;
+}
+
+ul.nav ul li a {
+    padding: 12px 16px;
+    display: block; /* Ajuste para que los enlaces ocupen todo el espacio */
+    text-align: left; /* Ajuste para alinear el texto a la izquierda */
+}
+
+ul.nav li:hover ul {
+    display: block;
+}
+
+/* Estilo para las imágenes en las listas */
+ul li img {
+    max-width: 100px; /* Ajusta el tamaño máximo de las imágenes */
+    margin-right: 10px;
+}
